@@ -1,0 +1,70 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'com.modrinth.minotaur' version '2.+'
+}
+
+architectury {
+    platformSetupLoomIde()
+    forge()
+}
+
+configurations {
+    common
+    shadowCommon
+    compileClasspath.extendsFrom common
+    runtimeClasspath.extendsFrom common
+    developmentForge.extendsFrom common
+}
+
+dependencies {
+    // Minecraft
+    forge "net.minecraftforge:forge:${project.forge_version}"
+    // Dependencies
+    modApi "dev.architectury:architectury-forge:${project.architectury_api_version}"
+    // Common
+    common(project(path: ":${parent.name}:common", configuration: "namedElements")) { transitive false }
+    shadowCommon(project(path: ":${parent.name}:common", configuration: "transformProductionForge")) { transitive = false }
+}
+
+processResources {
+    filesMatching('META-INF/mods.toml') {
+        expand "version": project.version
+    }
+}
+
+shadowJar {
+    exclude 'fabric.mod.json'
+    configurations = [project.configurations.shadowCommon]
+    archiveClassifier.set 'dev-shadow'
+}
+
+remapJar {
+    inputFile.set shadowJar.archiveFile
+    dependsOn shadowJar
+    archiveClassifier.set null
+}
+
+jar {
+    archiveClassifier.set 'dev'
+}
+
+components.java {
+    withVariantsFromConfiguration(project.configurations.shadowRuntimeElements) {
+        skip()
+    }
+}
+
+modrinth {
+    token = System.getenv('MODRINTH_TOKEN')
+    projectId = 'oresoresores'
+    versionName = '[1.18.2 Forge]'
+    versionNumber = project.version
+    versionType = 'alpha'
+    uploadFile = remapJar
+    gameVersions = ['1.18.2']
+    loaders = ['forge']
+    dependencies {
+        required.project 'architectury-api'
+    }
+    changelog = new File(rootProject.projectDir, 'changelog.md').text.replace('%version%', project.version)
+}

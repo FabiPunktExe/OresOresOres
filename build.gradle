@@ -1,0 +1,21 @@
+plugins {
+}
+
+version = project.ooo_version
+group = 'ooo'
+
+repositories {
+}
+
+dependencies {
+}
+
+subprojects {
+    version = rootProject.version
+    group = rootProject.group
+}
+
+task publish {
+    group = 'Publishing'
+    dependsOn ':oresoresores-1.18.2:publish'
+}

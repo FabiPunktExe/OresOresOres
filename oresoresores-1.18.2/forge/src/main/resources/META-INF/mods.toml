@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[38,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/FabiPunktExe/OresOresOres/issues"
+
+[[mods]]
+modId = "ooo"
+version = "${version}"
+displayName = "Ores Ores Ores"
+displayURL="https://github.com/FabiPunktExe/OresOresOres"
+logoFile = "icon.png"
+#credits=""
+authors = "Fabi.exe"
+description = '''
+Adds many (maybe not useful) ores.
+'''
+
+[[dependencies.ooo]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.ooo]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,1.19)"
+ordering = "NONE"
+side = "BOTH"
