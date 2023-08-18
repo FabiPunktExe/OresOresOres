@@ -5,4 +5,6 @@
   - Added Exordium Ingot
   - Added Exordium Block
 - Added Crappium
-  - Added Crappium Ingot
+  - Added Raw Crappium
+- Added English translation
+- Added German translation
