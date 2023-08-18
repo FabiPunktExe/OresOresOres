@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "exordium_ingot",
+  "ingredients": [
+    {
+      "item": "ooo:exordium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "ooo:exordium_ingot"
+  }
+}
