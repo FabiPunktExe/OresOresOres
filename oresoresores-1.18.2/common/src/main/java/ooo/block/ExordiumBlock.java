@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 import ooo.OresOresOres;
+import ooo.item.ExordiumIngot;
 
 public class ExordiumBlock extends Block {
     public static RegistrySupplier<Block> BLOCK;

@@ -4,3 +4,5 @@
   - Added Raw Exordium
   - Added Exordium Ingot
   - Added Exordium Block
+- Added Crappium
+  - Added Crappium Ingot

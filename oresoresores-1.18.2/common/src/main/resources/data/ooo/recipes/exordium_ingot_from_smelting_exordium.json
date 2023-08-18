@@ -5,7 +5,7 @@
   "experience": 0.7,
   "group": "exordium_ingot",
   "ingredient": {
-    "item": "ooo:exordium_ore"
+    "item": "ooo:exordium"
   },
   "result": "ooo:exordium_ingot"
 }

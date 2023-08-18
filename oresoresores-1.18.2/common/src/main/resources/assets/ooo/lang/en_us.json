@@ -1,8 +1,11 @@
 {
   "itemGroup.ooo.ores": "Ores Ores Ores",
+  "block.ooo.crappium": "Crappium",
   "block.ooo.exordium": "Exordium",
   "block.ooo.exordium_block": "Exordium Block",
   "block.ooo.killium": "Killium",
+  "item.ooo.crappium_ingot": "Crappium Ingot",
+  "item.ooo.raw_crappium": "Raw Crappium",
   "item.ooo.raw_exordium": "Raw Exordium",
   "item.ooo.exordium_ingot": "Exordium Ingot"
 }

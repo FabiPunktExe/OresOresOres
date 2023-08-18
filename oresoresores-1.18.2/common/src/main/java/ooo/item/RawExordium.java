@@ -1,13 +1,13 @@
-package ooo.block;
+package ooo.item;
 
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.world.item.Item;
 import ooo.OresOresOres;
 
-public class ExordiumIngot extends Item {
+public class RawExordium extends Item {
     public static RegistrySupplier<Item> ITEM;
 
-    public ExordiumIngot() {
+    public RawExordium() {
         super(new Properties().tab(OresOresOres.TAB));
     }
 }
