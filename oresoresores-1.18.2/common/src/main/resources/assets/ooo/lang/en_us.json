@@ -1,4 +1,8 @@
 {
-    "itemGroup.ooo.ores": "Ores Ores Ores",
-    "block.ooo.killium": "Killium"
+  "itemGroup.ooo.ores": "Ores Ores Ores",
+  "block.ooo.exordium": "Exordium",
+  "block.ooo.exordium_block": "Exordium Block",
+  "block.ooo.killium": "Killium",
+  "item.ooo.raw_exordium": "Raw Exordium",
+  "item.ooo.exordium_ingot": "Exordium Ingot"
 }
