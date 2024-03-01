@@ -15,7 +15,7 @@ subprojects {
     group = rootProject.group
 }
 
-task publish {
+tasks.register('publish') {
     group = 'Publishing'
     dependsOn ':oresoresores-1.18.2:publish'
 }
