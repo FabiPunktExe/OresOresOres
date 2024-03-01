@@ -1,4 +1,3 @@
-## Ores Ores Ores %version%
 - Added Killium
 - Added Exordium
   - Added Raw Exordium

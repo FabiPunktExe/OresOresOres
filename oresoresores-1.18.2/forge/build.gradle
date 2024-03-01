@@ -57,14 +57,14 @@ components.java {
 modrinth {
     token = System.getenv('MODRINTH_TOKEN')
     projectId = 'oresoresores'
-    versionName = '[1.18.2 Forge]'
-    versionNumber = project.version
+    versionName = "Ores Ores Ores ${version} (Forge 1.18.2)"
+    versionNumber = version as String
     versionType = 'alpha'
     uploadFile = remapJar
-    gameVersions = ['1.18.2']
-    loaders = ['forge']
+    gameVersions.set(['1.18.2'])
+    loaders.set(['forge'])
     dependencies {
         required.project 'architectury-api'
     }
-    changelog = new File(rootProject.projectDir, 'changelog.md').text.replace('%version%', project.version)
+    changelog = new File(rootProject.projectDir, 'CHANGELOG.md').text
 }
