@@ -1,3 +1,4 @@
+- Added Annoyum
 - Added Killium
 - Added Exordium
   - Added Raw Exordium

@@ -9,9 +9,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import ooo.block.*;
-import ooo.item.ExordiumIngot;
-import ooo.item.RawCrappium;
-import ooo.item.RawExordium;
+import ooo.item.*;
 
 public class OresOresOres {
     public static final String MOD_ID = "ooo";
@@ -20,6 +18,8 @@ public class OresOresOres {
     public static final CreativeModeTab TAB = CreativeTabRegistry.create(new ResourceLocation(MOD_ID, "ores"), () -> new ItemStack(Killium.ITEM.get()));
 
     public static void init() {
+        Annoyum.BLOCK = OresOresOres.BLOCKS.register("annoyum", Annoyum::new);
+        Annoyum.ITEM = OresOresOres.ITEMS.register("annoyum", Annoyum.AnnoyumItem::new);
         Crappium.BLOCK = OresOresOres.BLOCKS.register("crappium", Crappium::new);
         Crappium.ITEM = OresOresOres.ITEMS.register("crappium", Crappium.CrappiumItem::new);
         RawCrappium.ITEM = OresOresOres.ITEMS.register("raw_crappium", RawCrappium::new);
