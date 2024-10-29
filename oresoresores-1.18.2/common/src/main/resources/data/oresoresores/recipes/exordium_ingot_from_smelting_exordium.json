@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "exordium_ingot",
+  "ingredient": {
+    "item": "oresoresores:exordium"
+  },
+  "result": "oresoresores:exordium_ingot"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "exordium_ingot",
+  "ingredient": {
+    "item": "oresoresores:raw_exordium"
+  },
+  "result": "oresoresores:exordium_ingot"
+}

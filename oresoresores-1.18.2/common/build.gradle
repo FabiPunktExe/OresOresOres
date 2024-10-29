@@ -1,8 +1,0 @@
-dependencies {
-    modImplementation "net.fabricmc:fabric-loader:${project.fabric_loader_version}"
-    modApi "dev.architectury:architectury:${project.architectury_api_version}"
-}
-
-architectury {
-    common 'fabric', 'forge'
-}

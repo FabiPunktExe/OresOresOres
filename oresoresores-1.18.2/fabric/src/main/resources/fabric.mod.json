@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "ooo",
+  "id": "oresoresores",
   "version": "${version}",
   "name": "Ores Ores Ores",
   "description": "Adds many (maybe not useful) ores.",
@@ -10,11 +10,13 @@
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": ["ooo.fabric.OresOresOresFabric"]
+    "main": [
+      "de.fabiexe.oresoresores.fabric.OresOresOresFabric"
+    ]
   },
   "mixins": [
-    "ooo.mixins.json",
-    "ooo-fabric.mixins.json"
+    "oresoresores.mixins.json",
+    "oresoresores-fabric.mixins.json"
   ],
   "depends": {
     "minecraft": "${minecraft_version}",
